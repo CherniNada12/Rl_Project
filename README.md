@@ -21,6 +21,11 @@ RLWeb/
 
 ![Interface du Jeu du Trésor](interface.png)
 
+## 🤖 Mode démonstration
+
+![Démonstration du Jeu du Trésor](demonstration.png)
+
+
 ## 🚀 Installation
 
 ### Prérequis

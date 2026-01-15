@@ -25,6 +25,10 @@ RLWeb/
 
 ![Démonstration du Jeu du Trésor](demenstration.png)
 
+## 🎥 Démonstration
+
+[![Voir la démonstration](demonstration.png)](demo.mp4)
+
 
 ## 🚀 Installation
 

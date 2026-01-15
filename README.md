@@ -23,7 +23,7 @@ RLWeb/
 
 ## 🤖 Mode démonstration
 
-![Démonstration du Jeu du Trésor](demonstration.png)
+![Démonstration du Jeu du Trésor](demenstration.png)
 
 
 ## 🚀 Installation

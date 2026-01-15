@@ -36,7 +36,7 @@ RLWeb/
 
 1. **Cloner le repository**
 ```bash
-git clone <votre-repo>
+git clone <[votre-repo](https://github.com/CherniNada12/Rl_Project.git)>
 cd RLWeb
 ```
 

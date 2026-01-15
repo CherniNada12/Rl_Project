@@ -120,14 +120,48 @@ La grille 8×8 contient :
 - **ML** : NumPy (calculs matriciels)
 - **Algorithmes** : Q-Learning, Double Q-Learning, SARSA
 
-## 📝 Licence
+## 🧠 Algorithmes implémentés
 
-MIT License
+### 🔹 Q-Learning (off-policy)
+
+Le Q-Learning apprend la politique optimale indépendamment de la politique suivie par l’agent.
+
+**Équation de mise à jour :**
+Q(s,a) ← Q(s,a) + α [ r + γ maxₐ′ Q(s′,a′) − Q(s,a) ]
+
+
+
+### 🔹 Double Q-Learning (off-policy)
+
+Le Double Q-Learning est une amélioration du Q-Learning classique visant à réduire la surestimation des valeurs Q.
+
+**Équation de mise à jour :**
+Q1(s,a) ← Q1(s,a) + α [ r + γ Q2(s′, argmax Q1(s′,a′)) − Q1(s,a) ]
+Q2(s,a) ← Q2(s,a) + α [ r + γ Q1(s′, argmax Q2(s′,a′)) − Q2(s,a) ]
+
+### 🔹  SARSA (on-policy)
+
+SARSA (State–Action–Reward–State–Action) est un algorithme on-policy qui apprend la valeur des actions réellement suivies par la politique courante.
+
+**Équation de mise à jour :**
+Q(s,a) ← Q(s,a) + α [ r + γ Q(s′,a′) − Q(s,a) ]
+
+## 📊 Tableau comparatif des algorithmes d’apprentissage par renforcement
+
+| Critère | **Q-Learning** | **Double Q-Learning** | **SARSA** |
+|--------|---------------|----------------------|-----------|
+| **Type** | Off-policy | Off-policy | On-policy |
+| **Idée clé** | Apprend via la meilleure action possible | Réduit la surestimation avec deux tables Q | Apprend selon la politique suivie |
+| **Mise à jour** | `max Q(s′,a′)` | `Q1 / Q2 alternées` | `Q(s′,a′)` |
+| **Surestimation** | Élevée ⚠️ | Faible ✅ | Faible ✅ |
+| **Stabilité** | Moyenne | Élevée | Élevée |
+| **Convergence** | Rapide | Moyenne | Plus lente |
+| **Comportement** | Risqué | Équilibré | Prudent |
+| **Mémoire** | 1 table Q | 2 tables Q | 1 table Q |
+| **Résultat (Jeu du Trésor)** | Rapide mais instable | Stable et fiable | Sûr mais plus long |
+
 
 ## 👨‍💻 Auteur
 
-Votre Nom - [GitHub](https://github.com/votre-username)
+Nada Cherni & Maysen Chiha 
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou un pull request.

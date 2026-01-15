@@ -17,6 +17,9 @@ RLWeb/
 │   └── script.js       # Logique front-end (JavaScript)
 └── README.md           # Documentation
 ```
+## 🖼️ Interface de l’application
+
+![Interface du Jeu du Trésor](interface.png)
 
 ## 🚀 Installation
 
